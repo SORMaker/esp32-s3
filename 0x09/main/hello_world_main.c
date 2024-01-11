@@ -26,7 +26,6 @@ void sendTask1(void *pvParam)
 {
     QueueHandle_t sendQHandle = (QueueHandle_t)pvParam;
     BaseType_t xStatus;
-    //* case1: Transmit int type between two tasks
     int i = 1;
     while (1)
     {
@@ -39,7 +38,6 @@ void sendTask1(void *pvParam)
         {
             ESP_LOGW(SEND_TASK1_TAG,"Queue is full");
         }
-    //* Queue Will be Empty if Delay 2s
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
@@ -48,7 +46,6 @@ void sendTask2(void *pvParam)
 {
     QueueHandle_t sendQHandle = (QueueHandle_t)pvParam;
     BaseType_t xStatus;
-    //* case1: Transmit int type between two tasks
     int i = 2;
     while (1)
     {
@@ -61,7 +58,6 @@ void sendTask2(void *pvParam)
         {
             ESP_LOGW(SEND_TASK2_TAG,"Queue is full");
         }
-    //* Queue Will be Empty if Delay 2s
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
@@ -71,7 +67,6 @@ void recTask(void *pvParam)
     QueueHandle_t recQHandle = (QueueHandle_t)pvParam;
     BaseType_t xStatus;
     UBaseType_t QNum = 0;
-    //* case1: Transmit int type between two tasks
     int j = 0;
     while (1)
     {
@@ -95,7 +90,7 @@ void app_main(void)
     TaskHandle_t sTaskHandle1 = NULL;
     TaskHandle_t sTaskHandle2 = NULL;
     TaskHandle_t rTaskHandle = NULL;
-    //* case1: Trans int type in two tasks
+    //* Queue Multiple In Single Out
     QHandle = xQueueCreate(5, sizeof(int));
     if (QHandle != NULL)
     {
