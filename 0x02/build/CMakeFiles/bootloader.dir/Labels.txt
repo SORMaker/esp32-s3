@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/sormaker/Desktop/ESP32/0x02/build/CMakeFiles/bootloader
+/home/sormaker/Desktop/ESP32/0x02/build/CMakeFiles/bootloader.rule
+/home/sormaker/Desktop/ESP32/0x02/build/CMakeFiles/bootloader-complete.rule
+/home/sormaker/Desktop/ESP32/0x02/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/sormaker/Desktop/ESP32/0x02/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/sormaker/Desktop/ESP32/0x02/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/sormaker/Desktop/ESP32/0x02/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/sormaker/Desktop/ESP32/0x02/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/sormaker/Desktop/ESP32/0x02/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/sormaker/Desktop/ESP32/0x02/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

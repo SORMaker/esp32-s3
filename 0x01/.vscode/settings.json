@@ -1,0 +1,10 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "cmake.configureOnOpen": true,
+  "idf.flashType": "UART",
+  "idf.port": "/dev/ttyACM0",
+  "idf.adapterTargetName": "esp32s3",
+  "files.associations": {
+    "portmacro.h": "c"
+  }
+}

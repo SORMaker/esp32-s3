@@ -1,0 +1,445 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40048839: uart_tx_one_char_uart in ROM
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403755f6: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x403792d9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e9a9: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40379ae2: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+[0m
+[0;33m0x4037e768: esp_log_impl_lock_timeout at /home/sormaker/esp/esp-idf/components/log/log_freertos.c:48
+[0m
+[0;33m0x42018002: esp_log_writev at /home/sormaker/esp/esp-idf/components/log/log.c:207
+[0m
+[0;33m0x4037e71d: esp_log_write at /home/sormaker/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x420178ca: main_task at /home/sormaker/esp/esp-idf/components/freertos/app_startup.c:209 (discriminator 1)
+[0m
+[0;33m0x40379d89: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403755a4: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m

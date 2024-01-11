@@ -1,0 +1,69 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4004883e: uart_tx_one_char_uart in ROM
+[0m
+[0;33m0x4037599a: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe6d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b0eb: prvSelectHighestPriorityTaskSMP at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3574 (discriminator 1)
+[0m
+[0;33m0x4037b912: vTaskSwitchContext at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3641
+[0m
+[0;33m0x4037a814: _frxt_dispatch at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4037a80a: _frxt_int_exit at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200d73c: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:945
+[0m
+[0;33m0x4037599a: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe6d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b0eb: prvSelectHighestPriorityTaskSMP at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3574 (discriminator 1)
+[0m
+[0;33m0x4037b912: vTaskSwitchContext at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3641
+[0m
+[0;33m0x4037a814: _frxt_dispatch at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4037a80a: _frxt_int_exit at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200d73c: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:945
+[0m
+[0;33m0x4037599a: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe6d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b0eb: prvSelectHighestPriorityTaskSMP at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3574 (discriminator 1)
+[0m
+[0;33m0x4037b912: vTaskSwitchContext at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3641
+[0m
+[0;33m0x4037a814: _frxt_dispatch at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4037a80a: _frxt_int_exit at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200d73c: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:945
+[0m
+[0;33m0x4037599a: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af9: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe6d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b0eb: prvSelectHighestPriorityTaskSMP at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3574 (discriminator 1)
+[0m
+[0;33m0x4037b912: vTaskSwitchContext at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3641
+[0m
+[0;33m0x4037a814: _frxt_dispatch at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4037a80a: _frxt_int_exit at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x4200d73c: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:945
+[0m
+[0m

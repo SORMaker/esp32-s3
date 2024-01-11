@@ -1,0 +1,109 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/sormaker/Desktop/ESP32/0x07/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "hello_world" version: 1
+-- Adding linker script /home/sormaker/Desktop/ESP32/0x07/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_mcpwm esp_driver_pcnt esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_tsens esp_driver_uart esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/sormaker/esp/esp-idf/components/app_trace /home/sormaker/esp/esp-idf/components/app_update /home/sormaker/esp/esp-idf/components/bootloader /home/sormaker/esp/esp-idf/components/bootloader_support /home/sormaker/esp/esp-idf/components/bt /home/sormaker/esp/esp-idf/components/cmock /home/sormaker/esp/esp-idf/components/console /home/sormaker/esp/esp-idf/components/cxx /home/sormaker/esp/esp-idf/components/driver /home/sormaker/esp/esp-idf/components/efuse /home/sormaker/esp/esp-idf/components/esp-tls /home/sormaker/esp/esp-idf/components/esp_adc /home/sormaker/esp/esp-idf/components/esp_app_format /home/sormaker/esp/esp-idf/components/esp_bootloader_format /home/sormaker/esp/esp-idf/components/esp_coex /home/sormaker/esp/esp-idf/components/esp_common /home/sormaker/esp/esp-idf/components/esp_driver_ana_cmpr /home/sormaker/esp/esp-idf/components/esp_driver_dac /home/sormaker/esp/esp-idf/components/esp_driver_gpio /home/sormaker/esp/esp-idf/components/esp_driver_gptimer /home/sormaker/esp/esp-idf/components/esp_driver_i2c /home/sormaker/esp/esp-idf/components/esp_driver_i2s /home/sormaker/esp/esp-idf/components/esp_driver_mcpwm /home/sormaker/esp/esp-idf/components/esp_driver_pcnt /home/sormaker/esp/esp-idf/components/esp_driver_rmt /home/sormaker/esp/esp-idf/components/esp_driver_sdio /home/sormaker/esp/esp-idf/components/esp_driver_sdm /home/sormaker/esp/esp-idf/components/esp_driver_sdmmc /home/sormaker/esp/esp-idf/components/esp_driver_sdspi /home/sormaker/esp/esp-idf/components/esp_driver_spi /home/sormaker/esp/esp-idf/components/esp_driver_tsens /home/sormaker/esp/esp-idf/components/esp_driver_uart /home/sormaker/esp/esp-idf/components/esp_eth /home/sormaker/esp/esp-idf/components/esp_event /home/sormaker/esp/esp-idf/components/esp_gdbstub /home/sormaker/esp/esp-idf/components/esp_hid /home/sormaker/esp/esp-idf/components/esp_http_client /home/sormaker/esp/esp-idf/components/esp_http_server /home/sormaker/esp/esp-idf/components/esp_https_ota /home/sormaker/esp/esp-idf/components/esp_https_server /home/sormaker/esp/esp-idf/components/esp_hw_support /home/sormaker/esp/esp-idf/components/esp_lcd /home/sormaker/esp/esp-idf/components/esp_local_ctrl /home/sormaker/esp/esp-idf/components/esp_mm /home/sormaker/esp/esp-idf/components/esp_netif /home/sormaker/esp/esp-idf/components/esp_netif_stack /home/sormaker/esp/esp-idf/components/esp_partition /home/sormaker/esp/esp-idf/components/esp_phy /home/sormaker/esp/esp-idf/components/esp_pm /home/sormaker/esp/esp-idf/components/esp_psram /home/sormaker/esp/esp-idf/components/esp_ringbuf /home/sormaker/esp/esp-idf/components/esp_rom /home/sormaker/esp/esp-idf/components/esp_system /home/sormaker/esp/esp-idf/components/esp_timer /home/sormaker/esp/esp-idf/components/esp_wifi /home/sormaker/esp/esp-idf/components/espcoredump /home/sormaker/esp/esp-idf/components/esptool_py /home/sormaker/esp/esp-idf/components/fatfs /home/sormaker/esp/esp-idf/components/freertos /home/sormaker/esp/esp-idf/components/hal /home/sormaker/esp/esp-idf/components/heap /home/sormaker/esp/esp-idf/components/http_parser /home/sormaker/esp/esp-idf/components/idf_test /home/sormaker/esp/esp-idf/components/ieee802154 /home/sormaker/esp/esp-idf/components/json /home/sormaker/esp/esp-idf/components/log /home/sormaker/esp/esp-idf/components/lwip /home/sormaker/Desktop/ESP32/0x07/main /home/sormaker/esp/esp-idf/components/mbedtls /home/sormaker/esp/esp-idf/components/mqtt /home/sormaker/esp/esp-idf/components/newlib /home/sormaker/esp/esp-idf/components/nvs_flash /home/sormaker/esp/esp-idf/components/nvs_sec_provider /home/sormaker/esp/esp-idf/components/openthread /home/sormaker/esp/esp-idf/components/partition_table /home/sormaker/esp/esp-idf/components/perfmon /home/sormaker/esp/esp-idf/components/protobuf-c /home/sormaker/esp/esp-idf/components/protocomm /home/sormaker/esp/esp-idf/components/pthread /home/sormaker/esp/esp-idf/components/sdmmc /home/sormaker/esp/esp-idf/components/soc /home/sormaker/esp/esp-idf/components/spi_flash /home/sormaker/esp/esp-idf/components/spiffs /home/sormaker/esp/esp-idf/components/tcp_transport /home/sormaker/esp/esp-idf/components/touch_element /home/sormaker/esp/esp-idf/components/ulp /home/sormaker/esp/esp-idf/components/unity /home/sormaker/esp/esp-idf/components/usb /home/sormaker/esp/esp-idf/components/vfs /home/sormaker/esp/esp-idf/components/wear_levelling /home/sormaker/esp/esp-idf/components/wifi_provisioning /home/sormaker/esp/esp-idf/components/wpa_supplicant /home/sormaker/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sormaker/Desktop/ESP32/0x07/build
+[1/14] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+*******************************************************************************
+[2/14] Generating x509_crt_bundle
+[3/14] Generating ../../x509_crt_bundle.S
+[4/14] Building ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj
+[5/14] Linking C static library esp-idf/mbedtls/libmbedtls.a
+[6/14] Performing configure step for 'bootloader'
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/sormaker/Desktop/ESP32/0x07/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script /home/sormaker/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+-- Adding linker script /home/sormaker/esp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/sormaker/esp/esp-idf/components/bootloader /home/sormaker/esp/esp-idf/components/bootloader_support /home/sormaker/esp/esp-idf/components/efuse /home/sormaker/esp/esp-idf/components/esp_app_format /home/sormaker/esp/esp-idf/components/esp_bootloader_format /home/sormaker/esp/esp-idf/components/esp_common /home/sormaker/esp/esp-idf/components/esp_hw_support /home/sormaker/esp/esp-idf/components/esp_rom /home/sormaker/esp/esp-idf/components/esp_system /home/sormaker/esp/esp-idf/components/esptool_py /home/sormaker/esp/esp-idf/components/freertos /home/sormaker/esp/esp-idf/components/hal /home/sormaker/esp/esp-idf/components/log /home/sormaker/esp/esp-idf/components/bootloader/subproject/main /home/sormaker/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /home/sormaker/esp/esp-idf/components/newlib /home/sormaker/esp/esp-idf/components/partition_table /home/sormaker/esp/esp-idf/components/soc /home/sormaker/esp/esp-idf/components/spi_flash /home/sormaker/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sormaker/Desktop/ESP32/0x07/build/bootloader
+[7/14] Performing build step for 'bootloader'
+[1/2] Generating binary image from built executable
+esptool.py vv4.8.dev1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/sormaker/Desktop/ESP32/0x07/build/bootloader/bootloader.bin
+[2/2] cd /home/sormaker/Desktop/ESP32/0x07/build/bootloader/esp-idf/esptool_py && /home/sormaker/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/sormaker/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/sormaker/Desktop/ESP32/0x07/build/bootloader/bootloader.bin
+Bootloader binary size 0x5230 bytes. 0x2dd0 bytes (36%) free.
+[8/13] Completed 'bootloader'
+[9/13] Generating ld/sections.ld
+[10/13] Linking CXX executable hello_world.elf
+[11/13] Generating binary image from built executable
+esptool.py vv4.8.dev1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/sormaker/Desktop/ESP32/0x07/build/hello_world.bin
+[12/13] cd /home/sormaker/Desktop/ESP32/0x07/build/esp-idf/esptool_py && /home/sormaker/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/sormaker/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/sormaker/Desktop/ESP32/0x07/build/partition_table/partition-table.bin /home/sormaker/Desktop/ESP32/0x07/build/hello_world.bin
+hello_world.bin binary size 0x363f0 bytes. Smallest app partition is 0x100000 bytes. 0xc9c10 bytes (79%) free.
+[12/13] cd /home/sormaker/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/sormaker/esp/esp-idf -D "SERIAL_TOOL=/home/sormaker/.espressif/python_env/idf5.3_py3.8_env/bin/python;;/home/sormaker/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/sormaker/Desktop/ESP32/0x07/build -P /home/sormaker/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py vv4.8.dev1
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 34:85:18:45:fc:50
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00046fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21040 bytes to 13061...
+Writing at 0x00000000... (100 %)
+Wrote 21040 bytes (13061 compressed) at 0x00000000 in 0.3 seconds (effective 496.4 kbit/s)...
+Hash of data verified.
+Compressed 222192 bytes to 112612...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001e6fb... (28 %)
+Writing at 0x000252b5... (42 %)
+Writing at 0x0002b606... (57 %)
+Writing at 0x0003309f... (71 %)
+Writing at 0x0003a45d... (85 %)
+Writing at 0x00040504... (100 %)
+Wrote 222192 bytes (112612 compressed) at 0x00010000 in 1.6 seconds (effective 1087.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 565.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

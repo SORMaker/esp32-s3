@@ -1,0 +1,90 @@
+[0;32mI (111) esp_image: segment 1: paddr=0001cdc8 vaddr=3fc91e(202) cpu_start: ELF file SHA256:  6a27ba0d4...[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048836
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcb8
+load:0x403cc700,len:0x2d80
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.3-dev-1196-gece73357ca-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan  8 2024 22:38:50[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0cda0h ( 52640) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001cdc8 vaddr=3fc91e00 size=02938h ( 10552) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001f708 vaddr=40374000 size=00910h (  2320) load[0m
+[0;32mI (119) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=187e8h (100328) map[0m
+[0;32mI (145) esp_image: segment 4: paddr=00038810 vaddr=40374910 size=0d470h ( 54384) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (174) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (184) cpu_start: Application information:[0m
+[0;32mI (187) cpu_start: Project name:     hello_world[0m
+[0;32mI (192) cpu_start: App version:      1[0m
+[0;32mI (196) cpu_start: Compile time:     Jan  8 2024 22:38:46[0m
+[0;32mI (202) cpu_start: ELF file SHA256:  6a27ba0d4...[0m
+[0;32mI (208) cpu_start: ESP-IDF:          v5.3-dev-1196-gece73357ca-dirty[0m
+[0;32mI (215) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (220) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (224) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (236) heap_init: At 3FC95018 len 000546F8 (337 KiB): RAM[0m
+[0;32mI (242) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (249) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (262) spi_flash: detected chip: gd[0m
+[0;32mI (265) spi_flash: flash io: dio[0m
+[0;33mW (269) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (289) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (297) main_task: Started on CPU0[0m
+[0;32mI (307) main_task: Calling app_main()[0m
+In myTask1-111!
+In myTask2-222!
+[0;32mI (307) main_task: Returned from app_main()[0m
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!
+In myTask1-111!
+In myTask2-222!

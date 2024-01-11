@@ -1,0 +1,357 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40048839: uart_tx_one_char_uart in ROM
+[0m
+[0;33m0x40375992: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af1: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe5d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b9aa: xTaskRemoveFromEventList at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3826 (discriminator 1)
+[0m
+[0;33m0x4037a1d8: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1763
+[0m
+[0;33m0x4037a28a: xQueueTakeMutexRecursive at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+[0m
+[0;33m0x4037691d: lock_acquire_generic at /home/sormaker/esp/esp-idf/components/newlib/locks.c:144
+[0m
+[0;33m0x403769fd: _lock_acquire_recursive at /home/sormaker/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4200749b: uart_write at /home/sormaker/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:215
+[0m
+[0;33m0x42008629: console_write at /home/sormaker/esp/esp-idf/components/vfs/vfs_console.c:77 (discriminator 1)
+[0m
+[0;33m0x4200819a: esp_vfs_write at /home/sormaker/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+[0m
+[0;33m0x4200c9ca: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+[0m
+[0;33m0x4200c235: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+[0m
+[0;33m0x4200c292: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+[0m
+[0;33m0x4200c8d1: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+[0m
+[0;33m0x42010903: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+[0m
+[0;33m0x420102c6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+[0m
+[0;33m0x4200c953: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x42008c30: myTask at /home/sormaker/Desktop/ESP32/0x02/build/../main/hello_world_main.c:25
+[0m
+[0;33m0x4037a355: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758cc: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375992: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af1: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe5d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b9aa: xTaskRemoveFromEventList at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3826 (discriminator 1)
+[0m
+[0;33m0x4037a1d8: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1763
+[0m
+[0;33m0x4037a28a: xQueueTakeMutexRecursive at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+[0m
+[0;33m0x4037691d: lock_acquire_generic at /home/sormaker/esp/esp-idf/components/newlib/locks.c:144
+[0m
+[0;33m0x403769fd: _lock_acquire_recursive at /home/sormaker/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4200749b: uart_write at /home/sormaker/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:215
+[0m
+[0;33m0x42008629: console_write at /home/sormaker/esp/esp-idf/components/vfs/vfs_console.c:77 (discriminator 1)
+[0m
+[0;33m0x4200819a: esp_vfs_write at /home/sormaker/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+[0m
+[0;33m0x4200c9ca: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+[0m
+[0;33m0x4200c235: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+[0m
+[0;33m0x4200c292: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+[0m
+[0;33m0x4200c8d1: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+[0m
+[0;33m0x42010903: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+[0m
+[0;33m0x420102c6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+[0m
+[0;33m0x4200c953: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x42008c30: myTask at /home/sormaker/Desktop/ESP32/0x02/build/../main/hello_world_main.c:25
+[0m
+[0;33m0x4037a355: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758cc: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375992: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af1: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe5d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b9aa: xTaskRemoveFromEventList at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3826 (discriminator 1)
+[0m
+[0;33m0x4037a1d8: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1763
+[0m
+[0;33m0x4037a28a: xQueueTakeMutexRecursive at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+[0m
+[0;33m0x4037691d: lock_acquire_generic at /home/sormaker/esp/esp-idf/components/newlib/locks.c:144
+[0m
+[0;33m0x403769fd: _lock_acquire_recursive at /home/sormaker/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4200749b: uart_write at /home/sormaker/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:215
+[0m
+[0;33m0x42008629: console_write at /home/sormaker/esp/esp-idf/components/vfs/vfs_console.c:77 (discriminator 1)
+[0m
+[0;33m0x4200819a: esp_vfs_write at /home/sormaker/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+[0m
+[0;33m0x4200c9ca: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+[0m
+[0;33m0x4200c235: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+[0m
+[0;33m0x4200c292: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+[0m
+[0;33m0x4200c8d1: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+[0m
+[0;33m0x42010903: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+[0m
+[0;33m0x420102c6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+[0m
+[0;33m0x4200c953: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x42008c30: myTask at /home/sormaker/Desktop/ESP32/0x02/build/../main/hello_world_main.c:25
+[0m
+[0;33m0x4037a355: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758cc: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375992: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af1: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe5d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b9aa: xTaskRemoveFromEventList at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3826 (discriminator 1)
+[0m
+[0;33m0x4037a1d8: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1763
+[0m
+[0;33m0x4037a28a: xQueueTakeMutexRecursive at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+[0m
+[0;33m0x4037691d: lock_acquire_generic at /home/sormaker/esp/esp-idf/components/newlib/locks.c:144
+[0m
+[0;33m0x403769fd: _lock_acquire_recursive at /home/sormaker/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4200749b: uart_write at /home/sormaker/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:215
+[0m
+[0;33m0x42008629: console_write at /home/sormaker/esp/esp-idf/components/vfs/vfs_console.c:77 (discriminator 1)
+[0m
+[0;33m0x4200819a: esp_vfs_write at /home/sormaker/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+[0m
+[0;33m0x4200c9ca: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+[0m
+[0;33m0x4200c235: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+[0m
+[0;33m0x4200c292: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+[0m
+[0;33m0x4200c8d1: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+[0m
+[0;33m0x42010903: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+[0m
+[0;33m0x420102c6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+[0m
+[0;33m0x4200c953: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x42008c30: myTask at /home/sormaker/Desktop/ESP32/0x02/build/../main/hello_world_main.c:25
+[0m
+[0;33m0x4037a355: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758cc: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375992: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af1: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe5d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b9aa: xTaskRemoveFromEventList at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3826 (discriminator 1)
+[0m
+[0;33m0x4037a1d8: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1763
+[0m
+[0;33m0x4037a28a: xQueueTakeMutexRecursive at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+[0m
+[0;33m0x4037691d: lock_acquire_generic at /home/sormaker/esp/esp-idf/components/newlib/locks.c:144
+[0m
+[0;33m0x403769fd: _lock_acquire_recursive at /home/sormaker/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4200749b: uart_write at /home/sormaker/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:215
+[0m
+[0;33m0x42008629: console_write at /home/sormaker/esp/esp-idf/components/vfs/vfs_console.c:77 (discriminator 1)
+[0m
+[0;33m0x4200819a: esp_vfs_write at /home/sormaker/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+[0m
+[0;33m0x4200c9ca: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+[0m
+[0;33m0x4200c235: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+[0m
+[0;33m0x4200c292: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+[0m
+[0;33m0x4200c8d1: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+[0m
+[0;33m0x42010903: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+[0m
+[0;33m0x420102c6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+[0m
+[0;33m0x4200c953: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x42008c30: myTask at /home/sormaker/Desktop/ESP32/0x02/build/../main/hello_world_main.c:25
+[0m
+[0;33m0x4037a355: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758cc: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375992: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af1: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe5d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b9aa: xTaskRemoveFromEventList at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3826 (discriminator 1)
+[0m
+[0;33m0x4037a1d8: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1763
+[0m
+[0;33m0x4037a28a: xQueueTakeMutexRecursive at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+[0m
+[0;33m0x4037691d: lock_acquire_generic at /home/sormaker/esp/esp-idf/components/newlib/locks.c:144
+[0m
+[0;33m0x403769fd: _lock_acquire_recursive at /home/sormaker/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4200749b: uart_write at /home/sormaker/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:215
+[0m
+[0;33m0x42008629: console_write at /home/sormaker/esp/esp-idf/components/vfs/vfs_console.c:77 (discriminator 1)
+[0m
+[0;33m0x4200819a: esp_vfs_write at /home/sormaker/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+[0m
+[0;33m0x4200c9ca: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+[0m
+[0;33m0x4200c235: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+[0m
+[0;33m0x4200c292: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+[0m
+[0;33m0x4200c8d1: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+[0m
+[0;33m0x42010903: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+[0m
+[0;33m0x420102c6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+[0m
+[0;33m0x4200c953: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x42008c30: myTask at /home/sormaker/Desktop/ESP32/0x02/build/../main/hello_world_main.c:25
+[0m
+[0;33m0x4037a355: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758cc: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375992: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af1: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe5d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b9aa: xTaskRemoveFromEventList at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3826 (discriminator 1)
+[0m
+[0;33m0x4037a1d8: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1763
+[0m
+[0;33m0x4037a28a: xQueueTakeMutexRecursive at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+[0m
+[0;33m0x4037691d: lock_acquire_generic at /home/sormaker/esp/esp-idf/components/newlib/locks.c:144
+[0m
+[0;33m0x403769fd: _lock_acquire_recursive at /home/sormaker/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4200749b: uart_write at /home/sormaker/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:215
+[0m
+[0;33m0x42008629: console_write at /home/sormaker/esp/esp-idf/components/vfs/vfs_console.c:77 (discriminator 1)
+[0m
+[0;33m0x4200819a: esp_vfs_write at /home/sormaker/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+[0m
+[0;33m0x4200c9ca: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+[0m
+[0;33m0x4200c235: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+[0m
+[0;33m0x4200c292: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+[0m
+[0;33m0x4200c8d1: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+[0m
+[0;33m0x42010903: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+[0m
+[0;33m0x420102c6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+[0m
+[0;33m0x4200c953: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x42008c30: myTask at /home/sormaker/Desktop/ESP32/0x02/build/../main/hello_world_main.c:25
+[0m
+[0;33m0x4037a355: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758cc: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375992: panic_abort at /home/sormaker/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40379af1: esp_system_abort at /home/sormaker/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037fe5d: __assert_func at /home/sormaker/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b9aa: xTaskRemoveFromEventList at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3826 (discriminator 1)
+[0m
+[0;33m0x4037a1d8: xQueueSemaphoreTake at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1763
+[0m
+[0;33m0x4037a28a: xQueueTakeMutexRecursive at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+[0m
+[0;33m0x4037691d: lock_acquire_generic at /home/sormaker/esp/esp-idf/components/newlib/locks.c:144
+[0m
+[0;33m0x403769fd: _lock_acquire_recursive at /home/sormaker/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4200749b: uart_write at /home/sormaker/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:215
+[0m
+[0;33m0x42008629: console_write at /home/sormaker/esp/esp-idf/components/vfs/vfs_console.c:77 (discriminator 1)
+[0m
+[0;33m0x4200819a: esp_vfs_write at /home/sormaker/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+[0m
+[0;33m0x4200c9ca: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+[0m
+[0;33m0x4200c235: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+[0m
+[0;33m0x4200c292: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+[0m
+[0;33m0x4200c8d1: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+[0m
+[0;33m0x42010903: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+[0m
+[0;33m0x420102c6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+[0m
+[0;33m0x4200c953: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x42008c30: myTask at /home/sormaker/Desktop/ESP32/0x02/build/../main/hello_world_main.c:25
+[0m
+[0;33m0x4037a355: vPortTaskWrapper at /home/sormaker/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758cc: esp_restart_noos at /home/sormaker/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m

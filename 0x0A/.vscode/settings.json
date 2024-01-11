@@ -1,0 +1,25 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "cmake.configureOnOpen": true,
+  "idf.flashType": "UART",
+  "idf.port": "/dev/ttyACM0",
+  "idf.adapterTargetName": "esp32s3",
+  "files.associations": {
+    "portmacro.h": "c",
+    "task.h": "c",
+    "freertos.h": "c",
+    "esp_system.h": "c",
+    "freertosconfig.h": "c",
+    "esp_chip_info.h": "c",
+    "chip_revision.h": "c",
+    "sdkconfig.h": "c",
+    "inttypes.h": "c",
+    "esp_flash.h": "c",
+    "*.tcc": "c",
+    "queue.h": "c",
+    "esp_log.h": "c",
+    "esp_rom_sys.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp.default.compilerPath": "/home/sormaker/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc"
+}
