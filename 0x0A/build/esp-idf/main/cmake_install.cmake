@@ -1,4 +1,4 @@
-# Install script for directory: /home/sormaker/Desktop/ESP32/0x0A/main
+# Install script for directory: /home/sormaker/Desktop/esp32-s3/0x0A/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

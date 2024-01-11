@@ -26,7 +26,6 @@ void sendTask1(void *pvParam)
 {
     QueueHandle_t sendQHandle = (QueueHandle_t)pvParam;
     BaseType_t xStatus;
-    //* case1: Transmit int type between two tasks
     int i = 1;
     while (1)
     {
@@ -39,7 +38,6 @@ void sendTask1(void *pvParam)
         {
             ESP_LOGW(SEND_TASK1_TAG,"Queue is full");
         }
-    //* Queue Will be Empty if Delay 2s
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
@@ -48,7 +46,6 @@ void sendTask2(void *pvParam)
 {
     QueueHandle_t sendQHandle = (QueueHandle_t)pvParam;
     BaseType_t xStatus;
-    //* case1: Transmit int type between two tasks
     int i = 2;
     while (1)
     {
@@ -61,20 +58,20 @@ void sendTask2(void *pvParam)
         {
             ESP_LOGW(SEND_TASK2_TAG,"Queue is full");
         }
-    //* Queue Will be Empty if Delay 2s
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
 
 void recTask(void *pvParam)
 {
-    QueueHandle_t recQHandle = (QueueHandle_t)pvParam;
+    QueueSetHandle_t recQSetHandle = (QueueSetHandle_t)pvParam;
+    QueueHandle_t recQHandle = NULL;
     BaseType_t xStatus;
     UBaseType_t QNum = 0;
-    //* case1: Transmit int type between two tasks
     int j = 0;
     while (1)
     {
+        recQHandle = xQueueSelectFromSet(recQSetHandle, portMAX_DELAY);
         QNum = uxQueueMessagesWaiting(recQHandle);
         ESP_LOGI(REC_TASK_TAG,"QNum is %d",QNum);
         xStatus = xQueueReceive(recQHandle, &j, portMAX_DELAY);
@@ -91,18 +88,30 @@ void recTask(void *pvParam)
 
 void app_main(void)
 {
-    QueueHandle_t QHandle = NULL;
+    //* case: Queue Set
+    QueueHandle_t QHandle1 = NULL;
+    QueueHandle_t QHandle2 = NULL;
+
+    QueueSetHandle_t QSetHandle = NULL;
+
     TaskHandle_t sTaskHandle1 = NULL;
     TaskHandle_t sTaskHandle2 = NULL;
     TaskHandle_t rTaskHandle = NULL;
-    //* case1: Trans int type in two tasks
-    QHandle = xQueueCreate(5, sizeof(int));
-    if (QHandle != NULL)
+
+    uint8_t QLength = 5;
+    QHandle1 = xQueueCreate(QLength, sizeof(int));
+    QHandle2 = xQueueCreate(QLength, sizeof(int));
+    QSetHandle = xQueueCreateSet(QLength * 2);
+
+    xQueueAddToSet(QHandle1, QSetHandle);
+    xQueueAddToSet(QHandle2, QSetHandle);
+
+    if ((QHandle1 != NULL) && (QHandle2 != NULL) && (QSetHandle != NULL))
     {
         ESP_LOGI(APP_TAG,"Create Queue successfully!");
-        xTaskCreate(sendTask1, "sendTask1", 1024 * 5, (void *)QHandle, 1, &sTaskHandle1);
-        xTaskCreate(sendTask2, "sendTask2", 1024 * 5, (void *)QHandle, 1, &sTaskHandle2);
-        xTaskCreate(recTask, "recTask", 1024 * 5, (void *)QHandle, 1, &rTaskHandle);
+        xTaskCreate(sendTask1, "sendTask1", 1024 * 5, (void *)QHandle1, 1, &sTaskHandle1);
+        xTaskCreate(sendTask2, "sendTask2", 1024 * 5, (void *)QHandle2, 1, &sTaskHandle2);
+        xTaskCreate(recTask, "recTask", 1024 * 5, (void *)QSetHandle, 1, &rTaskHandle);
     }
     else
     {

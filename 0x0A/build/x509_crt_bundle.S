@@ -1,4 +1,4 @@
-/* * Data converted from /home/sormaker/Desktop/ESP32/0x0A/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/sormaker/Desktop/esp32-s3/0x0A/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

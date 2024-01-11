@@ -1,4 +1,4 @@
-# Install script for directory: /home/sormaker/Desktop/ESP32/0x0A
+# Install script for directory: /home/sormaker/Desktop/esp32-s3/0x0A
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/sormaker/Desktop/ESP32/0x0A/build/esp-idf/cmake_install.cmake")
+  include("/home/sormaker/Desktop/esp32-s3/0x0A/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sormaker/Desktop/ESP32/0x0A/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sormaker/Desktop/esp32-s3/0x0A/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
