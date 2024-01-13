@@ -1,0 +1,5 @@
+[1/4] cd /home/sormaker/Desktop/esp32-s3/0x0F/build/esp-idf/esptool_py && /home/sormaker/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/sormaker/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/sormaker/Desktop/esp32-s3/0x0F/build/partition_table/partition-table.bin /home/sormaker/Desktop/esp32-s3/0x0F/build/hello_world.bin
+hello_world.bin binary size 0x367c0 bytes. Smallest app partition is 0x100000 bytes. 0xc9840 bytes (79%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/sormaker/Desktop/esp32-s3/0x0F/build/bootloader/esp-idf/esptool_py && /home/sormaker/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/sormaker/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/sormaker/Desktop/esp32-s3/0x0F/build/bootloader/bootloader.bin
+Bootloader binary size 0x5230 bytes. 0x2dd0 bytes (36%) free.
