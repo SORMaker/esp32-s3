@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "hello_world",
-    "project_version":    "5ba8a76",
+    "project_version":    "0df42776-dirty",
     "project_path":       "/home/sormaker/Desktop/esp32-s3/0x0D",
     "idf_path":           "/home/sormaker/esp/esp-idf",
     "build_dir":          "/home/sormaker/Desktop/esp32-s3/0x0D/build",

@@ -23,35 +23,57 @@ int iCount = 0;
 
 void Task1(void *pvParam)
 {
+    BaseType_t iRet;
     const char *pcName = pcTaskGetName(NULL);
     while (1)
     {
-        xSemaphoreTake(semHandler, portMAX_DELAY);
-        for (int i = 0; i < 10; i++)
+        iRet = xSemaphoreTake(semHandler, portMAX_DELAY);
+        if (iRet == pdPASS)
         {
-            iCount++;
-            ESP_LOGI(pcName,"iCount = %d",iCount);
+            for (int i = 0; i < 10; i++)
+            {
+                iCount++;
+                ESP_LOGI(pcName,"iCount = %d",iCount);
+                vTaskDelay(pdMS_TO_TICKS(1000));
+            }
+            xSemaphoreGive(semHandler);
             vTaskDelay(pdMS_TO_TICKS(1000));
         }
-        xSemaphoreGive(semHandler);
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        else
+        {
+            ESP_LOGI(pcName, "Task1 didn't take!");
+            vTaskDelay(pdMS_TO_TICKS(1000));
+        }
+        
+
     } 
 }
 
 void Task2(void *pvParam)
 {
+    BaseType_t iRet;
     const char *pcName = pcTaskGetName(NULL);
     while (1)
     {
-        xSemaphoreTake(semHandler, portMAX_DELAY);
-        for (int i = 0; i < 10; i++)
+        iRet = xSemaphoreTake(semHandler, portMAX_DELAY);
+        if (iRet == pdPASS)
         {
-            iCount++;
-            ESP_LOGI(pcName,"iCount = %d",iCount);
+            for (int i = 0; i < 10; i++)
+            {
+                iCount++;
+                ESP_LOGI(pcName,"iCount = %d",iCount);
+                vTaskDelay(pdMS_TO_TICKS(1000));
+            }
+            xSemaphoreGive(semHandler);
             vTaskDelay(pdMS_TO_TICKS(1000));
         }
-        xSemaphoreGive(semHandler);
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        else
+        {
+            ESP_LOGI(pcName, "Task2 didn't take!");
+            vTaskDelay(pdMS_TO_TICKS(1000));
+        }
+        
+
     } 
 }
 
@@ -59,8 +81,23 @@ void app_main(void)
 {
     //* case: Binary Semaphore
     semHandler = xSemaphoreCreateBinary();
-    xSemaphoreGive(semHandler);
+    if (semHandler != NULL)
+    {
+        ESP_LOGI(APP_TAG, "Binary Semaphore Create Successfully!");
+        xSemaphoreGive(semHandler);
+    }
+    else
+    {
+        ESP_LOGE(APP_TAG, "Binary Semaphore Create Fail!");
+    }
+    
+    vTaskSuspendAll();
 
-    xTaskCreate(Task1, "Task1", 1024*5, NULL, 1, NULL);
-    xTaskCreate(Task2, "Task2", 1024*5, NULL, 1, NULL);
+    xTaskCreatePinnedToCore(Task1, "Task1", 1024*5, NULL, 1, NULL, 0);
+    xTaskCreatePinnedToCore(Task2, "Task2", 1024*5, NULL, 1, NULL, 0);
+
+    xTaskResumeAll();
+    // xTaskCreate(Task1, "Task1", 1024*5, NULL, 1, NULL);
+    // xTaskCreate(Task2, "Task2", 1024*5, NULL, 2, NULL);
+
 }
