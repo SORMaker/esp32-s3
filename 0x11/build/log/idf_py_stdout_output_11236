@@ -1,0 +1,90 @@
+[0;32mI (111) esp_image: segment 1: paddr=0001d188 vaddr=3fc929an 14 2024 20:59:40[0m
+[0;32mI (204) cpu_start: ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcb8
+load:0x403cc700,len:0x2d80
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.3-dev-1196-gece73357ca-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 14 2024 20:59:45[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d160h ( 53600) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001d188 vaddr=3fc92900 size=02958h ( 10584) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001fae8 vaddr=40374000 size=00530h (  1328) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=18870h (100464) map[0m
+[0;32mI (145) esp_image: segment 4: paddr=00038898 vaddr=40374530 size=0e384h ( 58244) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) cpu_start: Application information:[0m
+[0;32mI (188) cpu_start: Project name:     hello_world[0m
+[0;32mI (193) cpu_start: App version:      259d2d1c[0m
+[0;32mI (198) cpu_start: Compile time:     Jan 14 2024 20:59:40[0m
+[0;32mI (204) cpu_start: ELF file SHA256:  e217638c0...[0m
+[0;32mI (210) cpu_start: ESP-IDF:          v5.3-dev-1196-gece73357ca-dirty[0m
+[0;32mI (217) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (221) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (226) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (238) heap_init: At 3FC95C80 len 00053A90 (334 KiB): RAM[0m
+[0;32mI (244) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (250) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (264) spi_flash: detected chip: gd[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (284) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (291) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (298) main_task: Started on CPU0[0m
+[0;32mI (308) main_task: Calling app_main()[0m
+[0;32mI (308) app_main: EventGroupHandle Create Successfully![0m
+[0;32mI (308) main_task: Returned from app_main()[0m
+[0;32mI (318) Task1: Task1 wait Bits[0m
+[0;32mI (1318) Task2: BIT0 is set![0m
+[0;32mI (6318) Task2: BIT4 is set![0m
+[0;32mI (6318) Task1: Bit0 and Bit4 are set![0m
+[0;32mI (6318) Task1: Bit0 and Bit4 are reset[0m
+[0;32mI (7318) Task1: Task1 wait Bits[0m
+[0;32mI (11318) Task2: BIT0 is set![0m
+[0;32mI (16318) Task2: BIT4 is set![0m
+[0;32mI (16318) Task1: Bit0 and Bit4 are set![0m
+[0;32mI (16318) Task1: Bit0 and Bit4 are reset[0m
+[0;32mI (17318) Task1: Task1 wait Bits[0m
+[0;32mI (21318) Task2: BIT0 is set![0m
+[0;32mI (26318) Task2: BIT4 is set![0m
+[0;32mI (26318) Task1: Bit0 and Bit4 are set![0m
+[0;32mI (26318) Task1: Bit0 and Bit4 are reset[0m
+[0;32mI (27318) Task1: Task1 wait Bits[0m
+[0;32mI (31318) Task2: BIT0 is set![0m
+[0;32mI (36318) Task2: BIT4 is set![0m
+[0;32mI (36318) Task1: Bit0 and Bit4 are set![0m
+[0;32mI (36318) Task1: Bit0 and Bit4 are reset[0m
+[0;32mI (37318) Task1: Task1 wait Bits[0m
+[0;32mI (41318) Task2: BIT0 is set![0m
+[0;32mI (46318) Task2: BIT4 is set![0m
+[0;32mI (46318) Task1: Bit0 and Bit4 are set![0m
+[0;32mI (46318) Task1: Bit0 and Bit4 are reset[0m
+[0;32mI (47318) Task1: Task1 wait Bits[0m
+[0;32mI (51318) Task2: BIT0 is set![0m
+[0;32mI (56318) Task2: BIT4 is set![0m
+[0;32mI (56318) Task1: Bit0 and Bit4 are set![0m
+[0;32mI (56318) Task1: Bit0 and Bit4 are reset[0m
+[0;32mI (57318) Task1: Task1 wait Bits[0m
