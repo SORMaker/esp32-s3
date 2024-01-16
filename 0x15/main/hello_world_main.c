@@ -46,7 +46,7 @@ void Task2(void *pvParam)
 
     int ReceiveBytes = 0;
     char reText[50];
-
+    memset(reText, 0, sizeof(reText));
     while (1)
     {
         ReceiveBytes = xStreamBufferReceive(StreamBufferHandle, (void *)reText, sizeof(reText), portMAX_DELAY);
